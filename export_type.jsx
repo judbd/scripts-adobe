@@ -41,7 +41,7 @@ if (reg.test(uri_dossier_racine)) {
     //défini une variable avec l'emplacement du dossier "JPG"
     var uri_dossier_jpg = uri_dossier_racine + "/JPG/";
     //extrait le prefixe du nom du fichier pour savoir de quel type de PSD il s'agit (un mot clé prédéfini situé avant le "_".
-    var prefixFolder = nom_doc.match("(^mobile|^home|^ads?|^highlight|^sas|^cover|^avatar|^vignette])(?=_)" , "gi");
+    var prefixFolder = nom_doc.match("(^mobile|^home|^ads?|^highlight|^sas|^cover|^avatar|^vignette|^emailing|^mood(board)?)(?=_)" , "gi");
     //Si la regexp ne retourne pas un des préfixes prédéfinis, alors on appellera le dossier décli
     if(prefixFolder == null) {
     prefixFolder = "déclis";
