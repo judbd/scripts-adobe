@@ -93,7 +93,7 @@ if (reg.test(uri_dossier_racine)) {
         nom_doc = nom_doc.replace(/[ùûü]/gi,"u");
         
         //enregistre le jpg avec le nom du doc sans son extension psd + extension JPG
-        jpgFile = new File(dossier_date + "/" + annee + " " + mois_format[mois] + " " + jour_format + " " + nom_doc + ".jpg");
+        jpgFile = new File(dossier_date + "/" + annee + "_" + mois_format[mois] + " " + jour_format + " " + nom_doc + ".jpg");
         //créé un objet pour stocker les paramètres d'enregistrement
         jpgSaveOptions = new JPEGSaveOptions();
         //lie le profil de couleur (non)
